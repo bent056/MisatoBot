@@ -4,14 +4,14 @@ from discord.ext import commands
 import youtube_dl
 import announcements
 import chatlog
-import opurboprotection
+import MisatoCop
 import music
 from keep_alive import keep_alive
 
 token = os.environ['token']
 client = discord.Client()
 client = commands.Bot(command_prefix='mommy ')
-cog = [announcements, chatlog, opurboprotection]
+cog = [announcements, chatlog, MisatoCop]
 
 for i in range(len(cog)):
     cog[i].setup(client)
